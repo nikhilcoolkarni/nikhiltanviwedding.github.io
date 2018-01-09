@@ -93,7 +93,9 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
+					<br><br><br>
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							
 							<h3 style="color: navajowhite; font-size: 5em; font-family: -webkit-body;">Nikhil &amp; Tanvi</h3>
 							<h2>We Are Getting Married</h2>
 							<h3 style="color : white;">January 23rd, 2018 Pune, IND</h3>
@@ -115,7 +117,17 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
 					<h3>January 23rd, 2018 Pune, IND</h3>
-					<p>We invited you to celebrate our wedding</p>
+					<p>Hello All,</p>
+<p>
+Welcome to our wedding website! Thank you so much for visiting! This is the place you'll find every piece of information you will need regarding our wedding celebration. 
+
+Our wedding will be taking place in Pune(IND), on January 23rd 2018. So mark your calendars because we would love for you to come celebrate with us!
+</P>
+<p>We look forward to celebrating our wedding with as many friends and family members as possible.</p>
+
+
+
+" Love the life you live. Live the life you love" - Bob Marley</p>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
@@ -505,7 +517,21 @@
         enableUtc: false
     });
 </script>
+<script>
+//Array of images which you want to show: Use path you want.
+var images=new Array('images/2.jpg','images/IMG_4030.jpg','images/IMG_4032.jpg');
+var nextimage=0;
+doSlideshow();
 
+function doSlideshow(){
+    if(nextimage>=images.length){nextimage=0;}
+    $('.fh5co-cover')
+    .css('background-image','url("'+images[nextimage++]+'")')
+    .fadeIn(500,function(){
+        setTimeout(doSlideshow,2500);
+    });
+}
+</script>
 	</body>
 </html>
 
